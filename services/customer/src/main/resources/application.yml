@@ -1,0 +1,24 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: customer-service
+
+
+#spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+#      uri: mongodb://alibou:alibou@localhost:27017
+#      username: alibou
+#      password: alibou
+      username: rock
+      password: rock
+      host: localhost
+      port: 27017
+      database: customer
+
+      authentication-database: admin
+
+server:
+  port: 8090
